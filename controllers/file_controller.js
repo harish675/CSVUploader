@@ -47,7 +47,6 @@ module.exports.fileUpload = async function(req,res){
                         data_row:results.slice(1),
                   });
                    
-                   console.log(csvData);
                    
                   await csvData.save();
               }else{    
@@ -88,7 +87,6 @@ module.exports.deleteFile = async function (req,res){
                  
                 //If file deletion is successfully,delete the record from the database 
                 await File.findByIdAndDelete(id);
-                console.log('File and record deleted successfully......');
             }
 
             return res.redirect('back');
