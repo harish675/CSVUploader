@@ -1,7 +1,7 @@
 
 const mongoose = require('mongoose');
 
-mongoose.connect(`mongodb://127.0.0.1/csv_development`);
+mongoose.connect(`mongodb+srv://csv:csv@cluster0.dwoscrl.mongodb.net/csv`);
 
 const db = mongoose.connection;
 
