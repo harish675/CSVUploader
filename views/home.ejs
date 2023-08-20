@@ -1,0 +1,39 @@
+
+<link rel="stylesheet" href="/css/home.css">
+<section id="home-container">
+   
+      <div id="form-container">            
+          <h1>CSV File Upload</h1>
+          <form action="/files/upload" enctype="multipart/form-data" method="POST" id="input_from"> 
+             <label for="csv-file" class="file-label">
+              <input type="file" name="csv" id="csv-file" accept=".csv" required>
+              <i class="fa-solid fa-paperclip"></i>
+              Choose File
+            </label>
+                <button type="submit">
+                  <i class="fa-regular fa-plus"></i>
+                  Upload</button>
+          </form>   
+      </div>
+      
+      <div>
+          <h1>All Files</h1>
+          <ul>    
+          <% files.forEach(function(file){ %>
+                    <li>
+                      <span>
+                        <a href="/files/view/<%= file._id %>"><%=file.name%></a>                   
+                      </span>
+                      <span>
+                        <a href="/files/delete/?id=<%=file._id %>">
+                        <i class="fa-solid fa-trash-can"></i>
+                       </a>
+                      </span>     
+              
+                    </li>         
+          <% });%>
+        </ul> 
+      </div>
+      
+   
+</section>

@@ -1,0 +1,137 @@
+
+#home-container{
+      
+      width: 100%;
+      height: 100%;
+      font-family: sans-serif;
+     
+}
+#home-container div:first-child{
+      
+      width: 70%;
+      height: 120px;
+      margin-left: 15%;
+      margin-right: 15%;
+     
+}
+#home-container div:first-child h1{
+       
+       margin-top: 2px;
+       font-size: 25px;
+       font-weight:800;
+       text-align: center;    
+}
+#home-container div:first-child form {
+      
+       width: 50%;
+       height: 60%;
+       margin-left: 25%;
+       margin-right: 25%;
+       margin-top:-17px;  
+}
+
+#input_from button{ 
+    display: inline-block;
+    height: 35px;
+    width: 120px;
+    padding: 8px 16px;
+    background-color:rgb(1, 84, 1);
+    color: white;
+    border: transparent;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    padding-right: 25px;
+}
+
+
+
+.file-label {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.file-label:hover {
+    background-color: #ddd;
+}
+
+/* Hide the actual input element */
+input[type="file"] {
+    display: none;
+}
+
+#home-container div:nth-child(2){   
+    width: 70%;
+    height: 350px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 25px;
+    overflow-y: scroll; 
+    overflow-x: hidden;      
+}
+
+#home-container div:nth-child(2) h1{
+      
+     text-align: center;
+     font-size: 25px;
+     font-weight: 800;
+     margin-top: 2px;
+     
+}
+
+ul{
+     
+     width: 97%;
+     height: 100%;
+}
+ul li{
+     margin-left: -35px;
+     list-style: none;
+     width: 100%;
+     height: 40px;
+     margin-bottom: 10px;
+     display: flex;
+     justify-content: space-between;
+     background-color: rgb(96, 180, 111);
+}
+
+ul li span:first-child { 
+        
+       width: 80%;
+       height: 100%;
+       padding-top: 10px;
+       padding-left: 10px;       
+}
+ul li span:first-child a{
+      
+     text-decoration:none;
+     font-size: 18px;
+     font-weight: 400;
+     font-family: sans-serif;
+     color: black;  
+}
+ul li span:nth-child(2){
+     
+     width: 10%;
+     height: 100%;
+     /* border: 2px solid red; */
+}
+ul li span:nth-child(2) a{
+      display: inline-block;
+      text-decoration: none;
+      font-size: 18px;
+      color: red;
+      padding-top: 10px;
+      padding-left: 45px;
+     
+}
+

@@ -1,0 +1,28 @@
+
+<link rel="stylesheet" href="/css/view_csv.css">
+<div id="View-container">  
+    <h1>CSV Data View</h1>
+    <!-- Add a search box -->
+    <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search...">
+    <table id="dataTable" border="1">
+        <thead>
+            <tr>
+                <% for (const key in data[0]) { %>
+                    <th><%= key %></th>
+                <% } %>
+            </tr>
+        </thead>
+        <tbody>
+            <% data.forEach(item => { %>
+                <tr>
+                    <% for (const key in item) { %>
+                        <td><%= item[key] %></td>
+                    <% } %>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+<script src="/js/view.js"></script>
+
+    
